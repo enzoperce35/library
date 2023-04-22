@@ -6,12 +6,76 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
-
-    <title>Library</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
   </head>
 
   <body>
 
+    <div id="library-table" class="table-cont">
+      <h3>Library</h3>
+
+      <br>
+
+      <table class="table">
+
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Pages</th>
+            <th>Read</th>
+          </tr>
+        </thead>
+
+        <tbody id="book-table">
+        </tbody>
+      </table>
+      <hr>
+
+      <button onclick="showForm()" class="btn-info btn-sm">
+        Add Book
+      </button>
+
+    </div>
+
+    <div class="form-cont">
+
+      <form id="library-form">
+
+        <h3>
+          Add Book
+        </h3><br>
+
+        <div class="form-group">
+          <label for="title">Title</label>
+          <input type="text" class="form-control" id="title" name="title">
+        </div>
+
+        <div class="form-group">
+          <label for="author">Author</label>
+          <input type="text" class="form-control" id="author" name="author">
+        </div>
+
+        <div class="form-group">
+          <label for="pages">Pages</label>
+          <input type="number" class="form-control" id="pages" name="pages">
+        </div>
+
+        <div style="float: right" class="form-check">
+          <input class="form-check-input" type="checkbox"  id="read" name="read">
+          <label class="form-check-label" for="read">Read?</label>
+        </div>
+
+        <br>
+
+        <input type="submit">
+      </form>
+    </div>
+
+    <script src="/helpers/book_options.js"></script>
+    <script src="/helpers/library_table.js"></script>
+    <script src="/helpers/library_form.js"></script>
+    <script src="/helpers/book_object.js"></script>
     <script src="index.js"></script>
   </body>
 </html>
