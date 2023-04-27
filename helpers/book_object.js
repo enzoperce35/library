@@ -10,5 +10,7 @@ Book.prototype.addBookToLibrary = function() {
 };
 
 Book.prototype.removeBookFromLibrary = function() {
-  myLibrary.splice(myLibrary.indexOf(this), 1);
+  if (window.confirm("Are you sure you want to remove this book?")) {
+    myLibrary.splice(myLibrary.indexOf(this), 1);
+  }
 };

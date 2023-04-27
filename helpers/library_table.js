@@ -4,9 +4,9 @@ const bookForm  = document.getElementById('library-form');
 function RemoveBtn() {
   let remove = document.createElement('span');
 
-  remove.innerText = "[X]";
+  remove.innerHTML = "&nbsp;&nbsp;&nbsp;[X]";
 
-  remove.style.display = 'none';
+  remove.style = 'display: none; color: red';
 
   return remove
 }
@@ -38,6 +38,7 @@ function propertiesOf(book) {
   const trow = document.createElement('tr');
 
   Object.entries(book).forEach(([ key, value ]) => {
+
     let tdata = document.createElement('td');
 
     tdata.className = key;

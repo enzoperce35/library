@@ -10,6 +10,6 @@ function addDefaultBooksToLibrary() {
   });
 }
 
-//addDefaultBooksToLibrary();
+addDefaultBooksToLibrary();
 
 showTable();
