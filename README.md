@@ -15,3 +15,6 @@
 ## Js lessons covered
   - object constructors
   - object prototyping
+
+## Note
+  This is the first project from the 'TOP' Javascript course . There's so much more Js for me to learn. So, for code readabilty and orderliness, I used multiple Js file sheets for now.
