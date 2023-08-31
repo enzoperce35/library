@@ -8,6 +8,8 @@
 ## Usage
   #### Add Book
   ![alt text](assets/images/project_screenshots/add_book.png)
+  #### Add Book (with form validations)
+  ![alt text](assets/images/project_screenshots/add_book_error.png)
   #### Remove Book
   ![alt text](assets/images/project_screenshots/remove_book.png)
 
@@ -16,6 +18,7 @@
   - object constructors
   - object prototyping
   - object class syntax
+  - js form validations
 
 ## Note
   This is the first project from the 'TOP' Javascript course . There's so much more Js for me to learn. So, for code readabilty and orderliness, I used multiple Js file sheets for now.
